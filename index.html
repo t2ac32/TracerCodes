@@ -1,7 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<!-- W3 script library -->
-<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,23 +18,27 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- jquery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $('#header').load('nav.html'); 
+    })
+  </script>
+
 </head>
 
 <body id="index">
-
+    <!-- W3 script library -->
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
   <!-- Start your project here-->  
   <!--Main Navigation-->
-    <header>
+    <header id="header">
 	    <!-- Navbar -->
-        
+     <div id="header">
+     </div>
     </header>
-     <div id="navbar-container"> </div>
-     <div w3-include-html="nav.html"></div>
 
-     <script>
-        w3.includeHTML();
-     </script>
-    
      <div class="bg"></div>
    <!--Main Navigation-->
    <!-- Full Page Intro -->
