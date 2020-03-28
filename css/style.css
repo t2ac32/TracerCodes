@@ -10,7 +10,7 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url("{{ site.baseurl }}/img/backgrounds/aquarium.jpg");
+  background-image: url('{{ site.baseurl }}/{{ site.background_image}}');
 
   /* Full height */
   height: 100%;
