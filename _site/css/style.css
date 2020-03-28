@@ -8,7 +8,7 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url('/TracerCodes/img/backgrounds/roomA.jpg');
+  background-image: url("/TracerCodes/img/backgrounds/aquarium.jpg");
 
   /* Full height */
   height: 100%;
