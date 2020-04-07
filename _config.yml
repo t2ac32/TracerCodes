@@ -1,4 +1,6 @@
 name: Tracer Codes
+
+environment: production
 url: https://t2ac32.github.io
 baseurl: /TracerCodes
 

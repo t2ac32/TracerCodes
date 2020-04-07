@@ -5,16 +5,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          {% for node in site.pages %}
-              {% if page.url == node.url %}
-                <li class="nav-item active">
-                <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/pages/index.html">{{node.url}}<span class="sr-only">(current)</span></a>
-                </li>
-              {% else %}
-                <li><a href="{{node.url}}">{{node.title}}</a></li>
-              {% endif %}
+          {% for item in site.data.navbar %}
+            <a class="nav-item nav-link" href="{{item.link}}">{{ item.name }}</a>
           {% endfor %}
-
         </ul>
         <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
