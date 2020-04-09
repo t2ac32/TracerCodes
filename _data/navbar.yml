@@ -1,0 +1,17 @@
+- name: Home
+  link: /
+- name: Programming
+  link: /programming
+
+#- name: Publications
+#  link: /
+#- name: Resume
+#  link: /
+#- name: Contact
+#  link: /
+
+###····················
+#Future sections
+#······················
+#About, Games
+#······················

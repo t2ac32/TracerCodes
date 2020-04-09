@@ -1,7 +1,7 @@
 ---
 ---
 /*'../img/backgrounds/anastasia-ermakova-3.jpg'*/
-$baseurl: "{{ relative_url }}";
+$baseurl: "{{ site.baseurl }}";
 $bgrurl: "{{ site.background_image }}";
 
 body, html {
@@ -10,7 +10,7 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url($baseurl + $bgrurl);
+  background-image: url({{site.url}}{{site.baseurl}}{{site.background_image}});
 
   /* Full height */
   height: 100%;
