@@ -1,7 +1,7 @@
 - name: Home
-  link: /
+  url: /default
 - name: Programming
-  link: /programming
+  url: /programming
 
 #- name: Publications
 #  link: /
