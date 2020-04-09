@@ -1,6 +1,6 @@
 /*'../img/backgrounds/anastasia-ermakova-3.jpg'*/
 $baseurl: "/TracerCodes";
-$bgrurl: "/img/backgrounds/aquarium.jpg";
+$bgrurl: "/img/backgrounds/roomA.jpg";
 
 body, html {
   height: 100%;
@@ -8,7 +8,7 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url(http://localhost:4000/TracerCodes/img/backgrounds/aquarium.jpg);
+  background-image: url(http://localhost:4000/TracerCodes/img/backgrounds/roomA.jpg);
 
   /* Full height */
   height: 100%;
