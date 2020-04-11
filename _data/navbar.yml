@@ -1,7 +1,9 @@
 - name: Home
-  url: /default
+  url: /
 - name: Programming
-  url: /programming
+  url: /programming.html
+- name: Resume
+  url: /resume.html
 
 #- name: Publications
 #  link: /

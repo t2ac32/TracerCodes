@@ -4,4 +4,5 @@ environment: deveopment
 url: https://localhost
 baseurl: ""
 
-background_image: aquarium.jpg
+background_image: backgrounds/aquarium.jpg
+cv_pdf: media/CV_EduardoP_EN_2020.pdf
