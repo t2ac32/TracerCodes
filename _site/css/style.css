@@ -13,5 +13,14 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-color: black;
-  
+
+}
+
+iframe {
+    position: absolute;
+    overflow: hidden;
+    top:100;
+    left: 15%;
+    width: 75%;
+    height: 100%;
 }

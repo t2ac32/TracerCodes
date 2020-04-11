@@ -1,9 +1,9 @@
 - name: Home
   url: /
 - name: Programming
-  url: /programming.html
+  url: /programming
 - name: Resume
-  url: /resume.html
+  url: /pages/resume
 
 #- name: Publications
 #  link: /
