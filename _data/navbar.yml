@@ -6,8 +6,8 @@
   url: /pages/resume
 - name: Watchlist
   url: /pages/watchlist
-#- name: Publications
-#  link: /
+- name: Publications
+  link: /
 #- name: Resume
 #  link: /
 #- name: Contact
