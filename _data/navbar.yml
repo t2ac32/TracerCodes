@@ -1,10 +1,11 @@
 - name: Home
   url: /
 - name: Programming
-  url: /programming
+  url: /pages/programming
 - name: Resume
   url: /pages/resume
-
+- name: Watchlist
+  url: /pages/watchlist
 #- name: Publications
 #  link: /
 #- name: Resume

@@ -1,10 +1,13 @@
 ---
 layout: default
+title: Resume
 ---
-test de layout
-<main style="">
 
-        <iframe src="{{ site.baseurl }}/{{ site.cv_pdf }}" scrolling="no" frameborder="0" >
+<main >
+
+        <iframe src="{{ site.baseurl }}/{{ site.cv_pdf }}"
+        scrolling="no"
+         frameborder="0" >
         </iframe>
 
 </main>
