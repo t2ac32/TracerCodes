@@ -1,8 +1,7 @@
 ---
-layout: default
-title: Home
+layout: programming
+title: Programming
 ---
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,17 +10,17 @@ title: Home
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Tracer</title>
     <!-- MDB icon -->
-    <link rel="icon" href="{{ site.baseurl }}/img/tracer-favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ site.baseurl }}img/tracer-favicon.ico" type="image/x-icon">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/mdb.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}css/mdb.min.css">
     <!-- Your custom styles (optional) -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}css/style.css">
     <!-- jquery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     {% include navbar.html %}
@@ -32,27 +31,35 @@ title: Home
     <!-- Start your project here-->
 
     <!--Main Navigation-->
-    <div class="div-background">
-      <main class="page-content" aria-label="Content">
-              <div class="wrapper">
-                {{ content }}
+    <main>
+      <div class="constrain">
+        <h1>The best of the rest</h1>
+          <section class="card-list">
+            {% for post in site.posts offset:1 %}
+            <div class="card">
+              <img src="{{ post.thumbnail_image.small }}" />
+              <div class="card-details">
+                <h3>{{ post.date | date:"%d %b" }} - {{ post.title }}</h3>
+                <a href="{{ post.url }}" class="btn">Read More</a>
               </div>
-      </main>
-    </div>
-
+            </div>
+            {% endfor %}
+          </section>
+      </div>
+    </main>
      <!-- Full Page Intro -->
 
      <!-- Full Page Intro -->
     <!-- End your project here-->
 
     <!-- jQuery -->
-    <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}js/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="{{ site.baseurl }}/js/popper.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="{{ site.baseurl }}/js/mdb.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
     <script type="text/javascript"></script>
 
