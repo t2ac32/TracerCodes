@@ -1,6 +1,6 @@
 /*'../img/backgrounds/anastasia-ermakova-3.jpg'*/
 $baseurl: "";
-$bgrurl: "";
+$bgrurl: "backgrounds/aquarium.jpg";
 
 header {
 
@@ -26,6 +26,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-color: black;
+    filter: blur(4px)
 }
 
 iframe {
