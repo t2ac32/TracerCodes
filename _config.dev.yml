@@ -1,8 +1,11 @@
 name: Tracer Codes
 
 environment: deveopment
-url: https://localhost
+url: http://localhost
 baseurl: ""
 
 background_image: backgrounds/aquarium.jpg
 cv_pdf: media/CV_EduardoP_EN_2020.pdf
+
+# Server Config options
+livereload: true

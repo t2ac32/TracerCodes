@@ -1,0 +1,40 @@
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            .postDiv {
+                border: 5px outset red;
+                background-color: white;
+                opacity: 1;
+                width: 500px;
+                height: 500px;
+                text-align: center;
+            }
+            .col-3{
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="postDiv">
+            <div class="container">
+              {% for post in site.posts %}
+                    <div class="row">
+                        <div class="col-3" style="    color: #395063;;
+    padding: 2px 5px;">
+                            {{ post.date | date: "%Y-%m-%d" }}
+                        </div>
+                        <div class="col-8">
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </div>
+                    </div>
+              {% endfor %}
+            </div>
+
+
+        </div>
+    </body>
+</html>
