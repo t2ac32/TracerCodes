@@ -1,9 +1,4 @@
----
-layout: default
-title: Resume
----
 <span style="color:white">
-
 Hi! I am a **Biomedical Engineer** and **iOS, Python Developer** committed to the engineering and software technologies field, skillful on the implementation of healthcare solutions. Experience implementing clinical imaging systems and medical applications.
 
 [Full Resume in PDF]({{ site.baseurl }}/{{ site.cv_pdf }})
