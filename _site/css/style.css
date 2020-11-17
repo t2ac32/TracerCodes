@@ -73,6 +73,7 @@ iframe {
     height: 100vh;
     width: 110vh;
     overflow-y: auto;
+    overflow-x: auto;
     padding-top: 100px;
     position: absolute;
     scroll-behavior: smooth;
@@ -100,13 +101,12 @@ iframe {
     text-align: center;
 }
 .whiteLine{
-    position: absolute;
+    position: relative;
     border-left: 1px solid white;
     height: 1px;
-    width: 100vh;
-    
+    width: 100%;
     background-color: white;
-    
+    overflow: hidden;
 }
 
 .skill-frame{
@@ -118,23 +118,23 @@ iframe {
     padding-top: 15px;
     padding-bottom: 5px;
     
+    
 }
 .skill-frameBar { 
 	height: 80%;  /* Can be anything */
-	-moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
+	-moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
     border: 1px solid black;
 	border-radius: 25px;
-    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
-    
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);    
 }
 .skill-frameBar > span {
     
     height: 75%;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: rgb(30,46,60);
     background-image: linear-gradient(
         center bottom,
@@ -146,5 +146,51 @@ iframe {
         inset 0 -2px 6px rgba(0,0,0,0.4);
     position: absolute;
     overflow: hidden;
+}
 
+.language-frameBar { 
+	height: 80%;  /* Can be anything */
+	-moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border: 1px solid white;
+	border-radius: 25px;
+    box-shadow: inset 0 -1px 1px rgb(255, 255, 255);    
+}
+.language-frameBar > span {
+    
+    height: 75%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+    background-image: linear-gradient(
+        center bottom,
+        rgb(30,46,60) 37%,
+        gray 69%
+    );
+    box-shadow: 
+        inset 0 2px 9px  rgba(255,255,255,0.3),
+        inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: absolute;
+    overflow: hidden;
+}
+
+
+.profile-circle{
+    border-radius: 50%;
+    background-color: rgb(95, 133, 167);
+    width: 200px;
+    height: 200px;
+    padding-bottom: 50px ;
+}
+
+.fa-linkedin{
+    color: white;
+}
+.fa-github{
+    color: white;
+}
+.fa-twitter{
+    color: white;
 }
