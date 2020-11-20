@@ -2,7 +2,7 @@ name: Tracer Codes
 
 environment: deveopment
 url: http://localhost
-baseurl: ""
+baseurl: '/'
 
 background_image: backgrounds/aquarium.jpg
 cv_pdf: media/CV_EduardoP_EN_2020.pdf

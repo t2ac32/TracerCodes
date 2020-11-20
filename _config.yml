@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Your awesome title
-email: your-email@example.com
+email: eduardo.pradoruizl@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -28,8 +28,8 @@ baseurl: "/TracerCodes" # the subpath of your site, e.g. /blog
 url: "https://t2ac32.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 background_image: backgrounds/aquarium.jpg
 
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: init_tracer
+github_username:  t2ac32
 
 # Build settings
 #theme: minima
