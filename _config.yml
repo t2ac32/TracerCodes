@@ -25,11 +25,11 @@ plugins: [
 ]
 
 author: Tracer
+name: Tracer Codes
+
 email: eduardo.pradoruizl@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A.I, AR and Health.  Bio Engineer, iOS Dev, Melomaniac, Sound & Hardware hacker. (TUM, ITESM) (Munich, GDL)
 baseurl: "/TracerCodes" # the subpath of your site, e.g. /blog
 url: "https://t2ac32.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 background_image: backgrounds/aquarium.jpg
@@ -38,14 +38,9 @@ twitter_username: init_tracer
 github_username:  t2ac32
 
 
-
-
 # paginate settings
-paginate: 3 #Max number of of post displayer
+paginate: 4 #Max number of of post displayer
 paginate_path: "/pages/blog/page:num"
-
-gems:
-  - jekyll-paginate-v2
 
 # Exclude from processing.
 # The following items will not be processed, by default.

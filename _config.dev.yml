@@ -3,25 +3,26 @@ plugins: [
   jekyll-feed,
 ]
 
-name: Tracer Codes
 author: Tracer
+name: Tracer Codes
 
-environment: deveopment
+email: eduardo.pradoruizl@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A.I, AR and Health.  Bio Engineer, iOS Dev, Melomaniac, Sound & Hardware hacker. (TUM, ITESM) (Munich, GDL)
+environment: development
 url: http://localhost
 baseurl: '/'
-
 background_image: backgrounds/aquarium.jpg
 cv_pdf: media/CV_EduardoP_EN_2020.pdf
 
+#Social
+twitter_username: init_tracer
+github_username:  t2ac32
 
 # paginate settings
 # Pagination Settings
-paginate: 3
+paginate: 4
 paginate_path: "/pages/blog/page:num"
-
-
-
-
 
 # Server Config options
 livereload: true
