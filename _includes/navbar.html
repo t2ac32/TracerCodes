@@ -1,31 +1,35 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark  scrolling-navbar" style="background-color:black; ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color:black; z-index: 2; ">
   <a class="navbar-brand" href="{{ site.baseurl}}/index.html"><strong class="katakanaFont" style="font-size: 22pt">[init] Tracer </strong></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button"
+                                  data-toggle="collapse"
+                                  data-target="#navbarSupportedContent"
+                                  aria-controls="navbarSupportedContent"
+                                  aria-expanded="false"
+                                  aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          {% for item in site.data.navbar %}
-            <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}{{item.url}}">{{ item.name }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-        <ul class="navbar-nav nav-flex-icons">
-            {% for item in site.data.settings.social %}
-              <li class="nav-item">
-                {% assign first_char = item.link | slice: 0 %}
-                {% if first_char == '/' %}
-                  <a class="nav-link" href="{{ site.baseurl }}{{ item.link }}"><i class="fab fa-{{ item.icon }}" ></i></a>
-                {% else %}
-                  <a class="nav-link" href="{{ item.link }}" target="_blank"><i class="fab fa-{{ item.icon }}" ></i></a>
-                {% endif %}
-              </li>
-            {% endfor %}
-
-        </ul>
+      <ul class="navbar-nav mr-auto">
+        {% for item in site.data.navbar %}
+          <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}{{item.url}}">{{ item.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+        {% for item in site.data.settings.social %}
+          <li class="nav-item">
+            {% assign first_char = item.link | slice: 0 %}
+            {% if first_char == '/' %}
+              <a class="nav-link" href="{{ site.baseurl }}{{ item.link }}"><i class="fab fa-{{ item.icon }}" ></i></a>
+            {% else %}
+              <a class="nav-link" href="{{ item.link }}" target="_blank"><i class="fab fa-{{ item.icon }}" ></i></a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
     </div>
 </nav>
