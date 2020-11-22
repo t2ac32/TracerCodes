@@ -13,10 +13,16 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
+#
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
+# Build settings
+plugins: [
+  jekyll-paginate,
+  jekyll-feed,
+]
 
 author: Tracer
 email: eduardo.pradoruizl@gmail.com
@@ -31,10 +37,15 @@ background_image: backgrounds/aquarium.jpg
 twitter_username: init_tracer
 github_username:  t2ac32
 
-# Build settings
-#theme: minima
-plugins:
-  - jekyll-feed
+
+
+
+# paginate settings
+paginate: 3 #Max number of of post displayer
+paginate_path: "/pages/blog/page:num"
+
+gems:
+  - jekyll-paginate-v2
 
 # Exclude from processing.
 # The following items will not be processed, by default.

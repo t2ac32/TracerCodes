@@ -1,3 +1,8 @@
+plugins: [
+  jekyll-paginate,
+  jekyll-feed,
+]
+
 name: Tracer Codes
 author: Tracer
 
@@ -7,6 +12,16 @@ baseurl: '/'
 
 background_image: backgrounds/aquarium.jpg
 cv_pdf: media/CV_EduardoP_EN_2020.pdf
+
+
+# paginate settings
+# Pagination Settings
+paginate: 3
+paginate_path: "/pages/blog/page:num"
+
+
+
+
 
 # Server Config options
 livereload: true
