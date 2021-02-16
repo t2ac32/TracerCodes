@@ -101,7 +101,7 @@ iframe {
 }
 
 .div-blog{
-    background-color: rgb(35, 48, 69, 0.35);
+    background-color: rgba(35, 48, 69, 0.5);
     margin-right: 10%;
     margin-left: 10% ;
     position: relative;
@@ -272,12 +272,12 @@ iframe {
 
 /*BLOG*/
 .post-preview > a {
-  color: #66283d;
+  color: #853852;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #943346;
+  color: #94263c;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -291,8 +291,8 @@ iframe {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #c0e0e6;
-  font-size: 18px;
+  color: #a2d6df;
+  font-size: 15px;
   font-style: italic;
   margin-top: 0;
 }

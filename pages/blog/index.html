@@ -1,48 +1,59 @@
 ---
-title: Programming
+title: Blog
 layout: default
 ---
 <html>
-    <div class="blur-filter"></div>
-    <div class="div-blog">
-        <div class="row" style="width: 100%;">
-            <div class="container">
-                {% for post in paginator.posts %}
-                <div class="post-preview">
-                    <a href="{{ post.url | prepend: site.baseurl }}">
-                        <h2 class="post-title"> {{ post.title }}</h2>
-                        {% if post.subtitle %}
-                        <h3 class="post-subtitle">
-                            {{ post.subtitle }}
-                        </h3>
-                        {% endif %}
-                    </a>
-                    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-                </div>
-                <hr>
-                {% endfor %}
-            </div>    
-            <div class="container " style="width: 100%; vertical-align: middle;">
-                {% if paginator.total_pages > 1 %}
-                <ul class="pagination justify-content-end">
-                    {% if paginator.previous_page %}
-                    <li class="page-item">
-                        <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-                    </li>
-                    {% endif %}
-                
-                    {% if paginator.next_page %}
-                    <li class="page-item">
-                        <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" >Older Posts &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-                {% endif %}
-            </div>
+<div class="row">
+    <div class="col" style="margin-top: 40px;">
+        <div class="blur-filter" style="">
         </div>
-        
-    </div>        
-    
-</html>
+        <div class="div-blog" style="">
+            <div class="row" style="width: 100%;">
+                <div class="container">
+                    {% for post in paginator.posts %}
+                    <div class="post-preview" style="margin-left: 10px;">
+                        <a href="{{ post.url | prepend: site.baseurl }}">
+                            <h2 class="post-title"> {{ post.title }}</h2>
+                            {% if post.subtitle %}
+                            <h3 class="post-subtitle">
+                                {{ post.subtitle }}
+                            </h3>
+                            {% endif %}
+                        </a>
+                        <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{%
+                            endif
+                            %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+                    </div>
+                    <hr>
+                    {% endfor %}
+                </div>
+                <div class="container " style="width: 100%; vertical-align: middle;">
+                    {% if paginator.total_pages > 1 %}
+                    <ul class="pagination justify-content-end">
+                        {% if paginator.previous_page %}
+                        <li class="page-item">
+                            <a class="page-link"
+                                href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
+                                Newer Posts</a>
+                        </li>
+                        {% endif %}
 
-                
+                        {% if paginator.next_page %}
+                        <li class="page-item">
+                            <a class="page-link"
+                                href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older
+                                Posts
+                                &rarr;</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+</html>
